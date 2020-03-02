@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="css/groupform.css">  
+    </head>
+    <body>
+      <div id="form_div">
+        <div class="container">
+          <h2>Grouped form controls with too long legend:</h2>
+          <div class="address">
+        <form id="form" name="form">
+        <fieldset>
+        <legend>Your adress</legend>
+        <p>First name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="firstname" name="Firstname">
+        </p>
+        <p>Last name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" id="lastname" name="Lastname">
+        </p>
+        <p>Street&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" id="street" name="Street">
+        </p>
+        <p>City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" id="city" name="City">
+        </p>
+        </fieldset>
+        <fieldset>
+          <legend>Additional details</legend>
+        <p>Biography&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <textarea name="textarea">
+          </textarea></p>
+          <p>Image&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" id="image" name="image" class="form-control" placeholder="choose file">No file chosen</p>
+          <p>Age Group&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select class="form-control form-control-sm" name="select">
+              <option>0 to 9 years</option>
+            </select></p>
+          </fieldset>
+          <fieldset>
+            <legend>Interests</legend>
+            <table>
+              <tr>
+                <td>Hobbies</td>
+          <td>
+            <div style="border: 1px solid grey; width: 90px;">
+          Playing soccer<br>
+          Dancing<br>
+          Gardening<br>
+          Watching movies
+          </div>
+        </td></tr>
+          <tr>
+          <td>Favourite car</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><select class="form-control form-control-sm">
+              <option>volvo</option>
+            </select></td>
+            </tr>
+            <tr>
+            <td>Favourite public transport?</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td>
+            <div style="border:1px solid grey; width: 90px;">
+             <b>Ground</b><br>
+             Train<br>
+             Bus<br>
+             <b>Water</b><br>
+            </div></td>
+            </tr>
+            </table>
+            </fieldset>
+            <div style="margin-left: 200px; padding: 30px;">
+              <button style="width: 90px;" type="submit" class="btn btn-success">Submit</button>
+              <button style="width: 90px;" type="reset" class="btn btn-danger">Cancel</button>
+              <p>Designed by babiryegrace20&copy2020</p>
+            </div>
+        </form>
+      </div>
+      </div>
+      </div>
+      </body>
+      <script src="formvalidate.js"></script>
+      </html>

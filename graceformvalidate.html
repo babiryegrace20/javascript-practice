@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      body {max-width: 800px; margin: 0 auto; padding: 0 15px; max-height: 1000px;}
+      table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+        }
+      #btn{
+        background-color: lightblue;
+        border: 2px solid lightseagreen;
+        border-radius:15px;
+      }  
+      #form_id{
+        padding: 20px;
+      }
+      h2{
+        text-align: center;
+      }
+      #button{
+        padding-top: 10px;
+      }
+    </style>
+    </head>
+    <body>
+      <div id="copyright" style="height: 900px;">
+      <div id="btn">
+        <h2>Apply for a Loan</h2>
+        <form name="loan" id="form_id">
+        <p>FullName</p>
+        <input type="text" class="form-control" id="FullName" name="FullName" placeholder="FullName">
+        <p>Email</p>
+        <input type="text" class="form-control" id="Email" name="Email" placeholder="Email">
+        <p>PhoneNumber</p>
+        <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" placeholder="PhoneNumber">
+        <p>Job</p>
+        <input type="text" class="form-control" id="Job" name="Job" placeholder="Job">
+        <p>Yearly Income</p>
+        <input type="text" class="form-control" id="YearlyIncome" name="YearlyIncome" placeholder="YearlyIncome">
+        <p>Amount to loan</p>
+        <input type="text" class="form-control" id="Amount" name="Amount" placeholder="Amount">
+        <div id="button" class="form-group">
+          <form>
+            <div class="row">
+              <div class="col-md-6" style="margin-left: 150px;">
+        <input type="submit" class="btn btn-success" value="submit" onclick="validate()">
+        <input type="submit" class="btn btn-primary" value="cancel">
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6" style="margin-left: 150px;">
+                <p style="font-size: smaller; color: blue;">designed by babiryegrace20 &copy2020</p>
+              </div>
+            </div>
+        </form>
+        </div>
+        </form>
+      </div>
+      </div>
+      <script src="validate.js"></script>
+    </body> 
